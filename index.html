@@ -5,16 +5,19 @@
   <style>
      body { margin:0; padding:0; }
       #graphdiv1 { position:absolute; top:0; bottom:0; width:95%; height:300px; } 
+     /* #graphdiv2 { position:absolute; top:0; bottom:0; width:100%; height:300px; } */
   </style>
 </head>
 <body>
-
+<!--<div id="graphdiv"
+  style="width:1300px; height:300px; padding-top:50px;"></div> -->
+ <!-- <div id='graphdiv1'></div> -->
   <div id='graphdiv1'></div> 
 
   <script type="text/javascript">
   g1 = new Dygraph(
     document.getElementById("graphdiv1"),
-    "SanSimeonWellsDemo.csv",
+    "SanSimeonWells.csv",
     {
       rollPeriod: 0,
       showRoller: false,
@@ -22,6 +25,23 @@
       title: 'San Simeon Creek Wells',
     }
   ); 
-  </script>
+    
+  /* g2 = new Dygraph(
+    document.getElementById("graphdiv2"),
+    "wwtpRainGage.csv",
+    {
+      rollPeriod: 0,
+      showRoller: true,
+      ylabel: 'rainfall (inches)',
+      title: 'WWTP Rain Gage',
+    }
+  ); */
+  <br>
+  <br>
+  <br>
+  <br>
+  
+  <a href="RockyButte.html">Rocky Butte Rain Gauge</a>
+</script>
 </body>
 </html>
